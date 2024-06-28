@@ -15,16 +15,19 @@
                 <img src="/img/sun-icon.svg" class="h-16"/>
                 <h1 class="text-2xl text-white">Tu Canal del Clima</h1><h1 class="text-2xl text-yellow-500">&nbsp;Web</h1>
             </div>
-            <button class="text-white sm:hidden">
+            <button id="btnMenu" class="text-white p-2 focus:outline-none sm:hidden">
                 <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                     <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
                 </svg>
             </button>
         </section>
-        <div class="flex flex-col items-start mt-3 gap-3 sm:flex-row sm:m-0">
-            <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Blog</button>
-            <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Acerca</button>
-            <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Contacto</button>
+        <div id="menu" class="hidden sm:block items-start mt-3 gap-3 sm:m-0">
+            <div id="menu2" class="flex">
+                <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Blog</button>
+                <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Acerca</button>
+                <button class="text-white hover:bg-gray-200 w-full text-left px-2 rounded hover:text-gray-800">Contacto</button>
+            </div>
+            
         </div>
     </nav>
     <div class="container mx-auto ">
@@ -77,21 +80,21 @@
             </div>
             <div class="flex-col">
                 <div class="flex flex-row items-center gap-6 text-left py-2">
-                    <p class="font-bold text-4xl">16°C</p>
+                    <p class="font-bold text-4xl" id="tempActual">--°C</p>
                     <p class="font-bold">Parcialmente nublado</p>
                 </div>
                 <div class=" flex flex-row p-2">
-                    <div class="text-left">
-                        <h2 class="">Máxima: 17°</h2>
-                        <h2 class="">Mínima: 16°</h2>
-                        <h2 class="">ST: 15°</h2>
-                        <h2 class="">Humedad: 35%</h2>
+                    <div class="text-left p-1">
+                        <h2 class="" id="max">Máxima: --</h2>
+                        <h2 class="" id="min">Mínima: --</h2>
+                        <h2 class="" id="st">ST: --</h2>
+                        <h2 class="" id="humedad">Humedad: --</h2>
                     </div>
-                    <div class="text-left">
-                        <h2 class="">Viento: 18kxh</h2>
-                        <h2 class="">V. Dirección: Noroeste</h2>
-                        <h2 class="">Ráfagas: 25k</h2>
-                        <h2 class="">Precipitación: 28%</h2>
+                    <div class="text-left p-1">
+                        <h2 class="" id="viento">Viento: --</h2>
+                        <h2 class="" id="direccion">V. Dirección: --</h2>
+                        <h2 class="" id="nubocidad">Nubocidad: --</h2>
+                        
                     </div>
                 </div>
             </div>
